@@ -1,0 +1,15 @@
+
+.addButton{
+  -fx-background-color:  #2684FF;
+  -fx-color: white;
+}
+.addButton:hover{
+  -fx-background-color: #2f88fca6;
+}
+.addButton:active{
+  -fx-background-color: #1b4172;
+}
+.addButton:disabled{
+  -fx-background-color: #b9d7ffa6;
+  -fx-color: black;
+}

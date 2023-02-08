@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="759.0" prefWidth="1603.0" style="-fx-background-color: #fff; -fx-background-radius: 6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentsController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="1489.0" spacing="24.0">
+         <children>
+            <ComboBox prefHeight="40.0" prefWidth="199.0" promptText="Search Invoice" style="-fx-background-color: #FFFFFF; -fx-border-color: #D1D0D3; -fx-border-radius: 6;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ComboBox>
+            <Button mnemonicParsing="false" onAction="#AddStudentAction" prefHeight="37.0" prefWidth="144.0" styleClass="addButton" stylesheets="@../view/style/student.css" text="Add Student" textFill="WHITE">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow height="15.91" offsetY="2.0" radius="6.03" width="10.21">
+                     <color>
+                        <Color opacity="0.5593869686126709" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <MenuButton mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #fff; -fx-border-color: #D1D0D3;">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </MenuButton>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="11.0" layoutY="198.0" prefHeight="485.0" prefWidth="1589.0">
+         <children>
+            <HBox fx:id="firstNameCol" prefHeight="28.0" prefWidth="1589.0" style="-fx-background-color: #fffff5;">
+               <children>
+                  <CheckBox alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="18.0" prefWidth="19.0" style="-fx-background-color: #ffff20;" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="31.0" style="-fx-background-color: #ffff20;" text="ID" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="81.0" layoutY="15.0" prefHeight="18.0" prefWidth="90.0" style="-fx-background-color: #ffff20;" text="Student ID" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="144.0" style="-fx-background-color: #ffff20;" text="First Name" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="90.0" layoutY="15.0" prefHeight="18.0" prefWidth="160.0" style="-fx-background-color: #ffff20;" text="Second Name" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="216.0" layoutY="15.0" prefHeight="18.0" prefWidth="160.0" style="-fx-background-color: #ffff20;" text="Family Name" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="199.0" style="-fx-background-color: #ffff20;" text="Email" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="199.0" style="-fx-background-color: #ffff20;" text="Department" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="114.0" style="-fx-background-color: #ffff20;" text="Year" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="855.0" layoutY="15.0" prefHeight="16.0" prefWidth="193.0" style="-fx-background-color: #ffff20;" text="Phone number" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1125.0" layoutY="15.0" prefHeight="16.0" prefWidth="158.0" style="-fx-background-color: #ffff20;" text="Address" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="92.0" style="-fx-background-color: #ffff20;" text="Action" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox fx:id="checkCol" layoutY="27.0" prefHeight="455.0" prefWidth="24.0" />
+            <VBox fx:id="idCol" layoutX="37.0" layoutY="27.0" prefHeight="455.0" prefWidth="17.0" />
+            <VBox fx:id="studentCol" layoutX="64.0" layoutY="27.0" prefHeight="455.0" prefWidth="82.0" />
+            <VBox fx:id="FirstNameCol" layoutX="157.0" layoutY="27.0" prefHeight="455.0" prefWidth="136.0" />
+            <VBox fx:id="SurnameCol" layoutX="304.0" layoutY="27.0" prefHeight="455.0" prefWidth="152.0" />
+            <VBox fx:id="FamilyCol" layoutX="465.0" layoutY="27.0" prefHeight="455.0" prefWidth="152.0" />
+            <VBox fx:id="emailCol" layoutX="629.0" layoutY="27.0" prefHeight="455.0" prefWidth="191.0" />
+            <VBox fx:id="deparmentCol" layoutX="830.0" layoutY="27.0" prefHeight="455.0" prefWidth="191.0" />
+            <VBox fx:id="YearCol" layoutX="1030.0" layoutY="27.0" prefHeight="455.0" prefWidth="106.0" />
+            <VBox fx:id="addressCol" layoutX="1346.0" layoutY="27.0" prefHeight="455.0" prefWidth="144.0" />
+            <VBox fx:id="actionCol" layoutX="1503.0" layoutY="27.0" prefHeight="455.0" prefWidth="82.0" />
+            <VBox fx:id="phoneNumberCol" layoutX="1146.0" layoutY="29.0" prefHeight="455.0" prefWidth="185.0" />
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="679.0" prefHeight="80.0" prefWidth="1500.0" spacing="26.0">
+         <children>
+            <ComboBox prefWidth="150.0" promptText="Rows per page: " style="-fx-background-color: TRANSPARENT;" />
+            <Label text="1-5 of 6" />
+            <Pagination focusTraversable="false" maxHeight="35.0" maxPageIndicatorCount="5" prefHeight="34.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</Pane>
